@@ -13,40 +13,14 @@ $('#enter').click(function(){
  $('#registration').removeClass('modal__toggle--active');
 });
 
-//////////////////////
-
-$('#personal-info').click(function(){
- $('.personal').toggle();
- $('.modal-registration').hide();
- $('#personal-info').addClass('active');
-});
-
-$('#contacts-info').click(function(){
- $('.contacts').toggle();
- $('.modal-registration').hide();
- $('#contacts-info').addClass('active');
-});
-
-$('#order-info').click(function(){
- $('.order').toggle();
- $('.modal-registration').hide();
- $('#order-info').addClass('active');
-});
-
-$('#service-info').click(function(){
- $('.service').toggle();
- $('.modal-registration').hide();
- $('#service-info').addClass('active');
-});
-
-$('#review-info').click(function(){
- $('.review').toggle();
- $('.modal-registration').hide();
- $('#review-info').addClass('active');
-});
-
-$('#pay-info').click(function(){
- $('.pay').toggle();
- $('.modal-registration').hide();
- $('#pay-info').addClass('active');
-});
+// $(function()
+// {
+//     $('body').on('click', 'a.ajax', function(event) // вешаем обработчик на все ссылки, даже созданные после загрузки страницы
+//     {
+//         event.preventDefault(); // предотвращаем штатное действие, то есть переход по ссылке
+//         $.get($(this).attr('href'), function() // отправляем GET запрос на href, указанный в ссылке
+//         {
+//             console.log('href'); // выводим полученные данные в консоль.
+//         });
+//     });
+// });

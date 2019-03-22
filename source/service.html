@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>kladovochka</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div style="display:none">
+    <include src="source/img/img.svg"></include>
+  </div>
+  <main class="page-main container">
+      <section class="service box">
+        <div class="form">
+          <ul class="service__lists">
+            <li>
+              <div class="service__item">
+                <svg width="37" height="37">
+                  <use xlink:href="#icon-furniture"></use>
+                </svg>
+                <div class="service__element">
+                  <h2>Хранение мебели</h2>
+                  <p class="service__data">12.03 - 12.04</p>
+                  <p class="service__price">1200 руб.</p>
+                </div>
+              </div>
+              <div class="service__still">
+                <p class="service__day">осталось<strong>10 дней</strong></p>
+                <button type="button" name="button">Продлить</button>
+              </div>
+            </li>
+            <li>
+              <div class="service__item">
+                <svg width="37" height="37">
+                  <use xlink:href="#icon-furniture"></use>
+                </svg>
+                <div class="service__element">
+                  <h2>Хранение мебели</h2>
+                  <p class="service__data">16.03 - 16.04</p>
+                  <p class="service__price">1200 руб.</p>
+                </div>
+              </div>
+              <div class="service__still">
+                <p class="service__day">осталось<strong>14 дней</strong></p>
+                <button type="button" name="button">Продлить</button>
+              </div>
+            </li>
+            <li>
+              <div class="service__item">
+                <svg width="37" height="37">
+                  <use xlink:href="#icon-warehouse"></use>
+                </svg>
+                <div class="service__element">
+                  <h2>Аренда склада</h2>
+                  <p class="service__data">10.01 - 10.04</p>
+                  <p class="service__price">1200 руб.</p>
+                </div>
+              </div>
+              <div class="service__still">
+                <p class="service__day">осталось <strong>8 дней</strong></p>
+                <button type="button" name="button">Продлить</button>
+              </div>
+            </li>
+            <li>
+              <div class="service__item">
+                <svg width="37" height="37">
+                  <use xlink:href="#icon-furniture"></use>
+                </svg>
+                <div class="service__element">
+                  <h2>Хранение мебели</h2>
+                  <p class="service__data">25.02 - 15.04</p>
+                  <p class="service__price">1200 руб.</p>
+                </div>
+              </div>
+              <div class="service__still">
+                <p class="service__day">осталось <strong>13 дней</strong></p>
+                <button type="button" name="button">Продлить</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <article class="info">
+        <ul class="info__lists">
+          <li class="info__list">
+            <h2>Финансы</h2>
+          </li>
+          <li class="info__list">
+            <a href="pay.html" id="pay-info">Пополнить баланс</a>
+          </li>
+          <li class="info__list">
+            <a href="review.html" id="review-info">История транзакций</a>
+            <div class="review__toggle">
+              <input class="review__radio" id="import" type="checkbox" name="radio2" checked>
+              <label for="import">Зачисление</label>
+              <input class="review__radio" id="export" type="checkbox" name="radio3" checked>
+              <label for="export">Списание</label>
+            </div>
+          </li>
+        </ul>
+        <ul class="info__lists">
+          <li class="info__list">
+            <h2>Профиль</h2>
+          </li>
+          <li class="info__list">
+            <a href="index.html" id="personal-info">Личная информация</a>
+          </li>
+          <li class="info__list">
+            <a href="contacts.html" id="contacts-info">Контакты</a>
+          </li>
+        </ul>
+        <ul class="info__lists">
+          <li class="info__list">
+            <h2>Услуги</h2>
+          </li>
+          <li class="info__list">
+            <a href="order.html" id="order-info">Заказать услугу</a>
+          </li>
+          <li class="info__list">
+            <a href="#" id="service-info">Мои услуги</a>
+          </li>
+        </ul>
+        <ul class="info__lists">
+          <li class="info__list">
+            <h2>Настройки</h2>
+          </li>
+        </ul>
+      </article>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

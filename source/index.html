@@ -9,9 +9,6 @@
 </head>
 
 <body>
-  <div style="display:none">
-    <include src="source/img/img.svg"></include>
-  </div>
   <main class="page-main container">
     <section class="personal box">
       <form class="form" action="index.html" method="post">
@@ -89,345 +86,22 @@
         </div>
       </form>
     </section>
-    <section class="contacts box">
-      <form class="form" action="index.html" method="post">
-        <div class="box__block">
-          <label for="site">Сайт</label>
-          <input class="box__input" id="site" type="text">
-          <label for="tel">Телефон</label>
-          <input class="box__input" id="tel" type="text" placeholder="89004561365">
-          <label for="post">Почта</label>
-          <input class="box__input" id="post" type="text" placeholder="shestpsov@gmail.com">
-          <label for="">Мессенджер</label>
-          <div class="contacts__messenger">
-            <div class="contacts__item">
-              <select id="">
-                <option>WhatsApp</option>
-                <option>Telegram</option>
-                <option>Viber</option>
-              </select>
-              <input type="text" placeholder="+7 (921) 621 05 20">
-            </div>
-            <div class="contacts__item">
-              <select id="">
-                <option>Telegram</option>
-              </select>
-              <input type="text" placeholder="@shestoi_pes">
-            </div>
-            <div class="contacts__item">
-              <select id="">
-                <option>Добавить</option>
-              </select>
-            </div>
-          </div>
-          <div class="personal__button button">
-            <input class="button__cancel" type="button" name="" value="Отменить">
-            <input class="button__enter" type="submit" value="Подтвердить">
-          </div>
-        </div>
-      </form>
-    </section>
-    <section class="order box">
-      <div class="form">
-        <ul class="order__lists">
-          <li>
-            <ul class="order__items">
-              <li class="order__icon">
-                <svg width="37" height="37">
-                  <use xlink:href="#icon-furniture"></use>
-                </svg>
-              </li>
-              <li class="order__text">
-                <h2>Хранение мебели</h2>
-                <p>Когда требуется хранение мебели в СПб, без мини-склада не обойтись. А необходимость в этой услуге может возникнуть в самых разных случаях: при переезде, при ремонте, при сдаче квартиры посторонним людям, при смене офиса. Раньше в
-                  таких ситуациях человек сталкивался с огромной проблемой. Сегодня её решение очевидно – обратиться в мувинговую компанию, которая не только способна обеспечить временное хранение мебели, но и её полную сохранность.</p>
-                <div class="order__button">
-                  <div>
-                    <a class="order__link order__request" href="#">Запросить</a>
-                    <a class="order__link order__tariff" href="#">Тарифы</a>
-                  </div>
-                  <a class="order__link2" href="#">узнать подробнее</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul class="order__items">
-              <li class="order__icon">
-                <svg width="37" height="37">
-                  <use xlink:href="#icon-warehouse"></use>
-                </svg>
-              </li>
-              <li class="order__text">
-                <h2>Аренда склада</h2>
-                <p>Аренда склада в Петербурге – необходимая услуга для бизнеса и частных лиц. В ней нуждаются не только производственные и торговые компании, но и другие организации, а также обычные люди. На данный момент в городе имеется довольно
-                  большой выбор мест для размещения товаров. Однако помещений под аренду склада для хранения вещей не очень много.</p>
-                <div class="order__button">
-                  <div>
-                    <a class="order__link order__request" href="#">Запросить</a>
-                    <a class="order__link order__tariff" href="#">Тарифы</a>
-                  </div>
-                  <a class="order__link2" href="#">узнать подробнее</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul class="order__items">
-              <li class="order__icon">
-                <svg width="37" height="37">
-                  <use xlink:href="#icon-storage"></use>
-                </svg>
-              </li>
-              <li class="order__text">
-                <h2>Временное хранение вещей</h2>
-                <p>Сегодня для многих из нас актуальна услуга временного хранения вещей. Благодаря ей можно размесить собственное имущество или имущество компании на территории мувинговой компании. Спектр предметов может быть самым разным, начиная
-                  от ненужной в данный момент мебели и заканчивая архивной документацией фирм, срок хранения которой ещё не подошёл к концу. К слову, эта услуга очень популярна за рубежом. В Америке, например, существует свыше 50 тыс. таких
-                  складских комплексов.</p>
-                <div class="order__button">
-                  <div>
-                    <a class="order__link order__request" href="#">Запросить</a>
-                    <a class="order__link order__tariff" href="#">Тарифы</a>
-                  </div>
-                  <a class="order__link2" href="#">узнать подробнее</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="service box">
-      <div class="form">
-        <ul class="service__lists">
-          <li>
-            <div class="service__item">
-              <svg width="37" height="37">
-                <use xlink:href="#icon-furniture"></use>
-              </svg>
-              <div class="service__element">
-                <h2>Хранение мебели</h2>
-                <p class="service__data">12.03 - 12.04</p>
-                <p class="service__price">1200 руб.</p>
-              </div>
-            </div>
-            <div class="service__still">
-              <p class="service__day">осталось<strong>10 дней</strong></p>
-              <button type="button" name="button">Продлить</button>
-            </div>
-          </li>
-          <li>
-            <div class="service__item">
-              <svg width="37" height="37">
-                <use xlink:href="#icon-furniture"></use>
-              </svg>
-              <div class="service__element">
-                <h2>Хранение мебели</h2>
-                <p class="service__data">16.03 - 16.04</p>
-                <p class="service__price">1200 руб.</p>
-              </div>
-            </div>
-            <div class="service__still">
-              <p class="service__day">осталось<strong>14 дней</strong></p>
-              <button type="button" name="button">Продлить</button>
-            </div>
-          </li>
-          <li>
-            <div class="service__item">
-              <svg width="37" height="37">
-                <use xlink:href="#icon-warehouse"></use>
-              </svg>
-              <div class="service__element">
-                <h2>Аренда склада</h2>
-                <p class="service__data">10.01 - 10.04</p>
-                <p class="service__price">1200 руб.</p>
-              </div>
-            </div>
-            <div class="service__still">
-              <p class="service__day">осталось <strong>8 дней</strong></p>
-              <button type="button" name="button">Продлить</button>
-            </div>
-          </li>
-          <li>
-            <div class="service__item">
-              <svg width="37" height="37">
-                <use xlink:href="#icon-furniture"></use>
-              </svg>
-              <div class="service__element">
-                <h2>Хранение мебели</h2>
-                <p class="service__data">25.02 - 15.04</p>
-                <p class="service__price">1200 руб.</p>
-              </div>
-            </div>
-            <div class="service__still">
-              <p class="service__day">осталось <strong>13 дней</strong></p>
-              <button type="button" name="button">Продлить</button>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="review box">
-      <div class="form">
-        <div class="review__wraper">
-          <header class="review__header">
-            <p class="review__header-title">Ваш текущий баланс:<span>15000 руб.</span></p>
-            <div class="review__date">
-              <p class="review__open">показать за:</p>
-              <select>
-                <option>января</option>
-                <option>февраля</option>
-                <option>марта</option>
-                <option>апреля</option>
-                <option>мая</option>
-                <option>июня</option>
-                <option>июля</option>
-                <option>августа</option>
-                <option>сентября</option>
-                <option>октября</option>
-                <option>ноября</option>
-                <option>декабря</option>
-              </select>
-              <select>
-                <option>2019</option>
-                <option>2018</option>
-                <option>2017</option>
-                <option>2015</option>
-              </select>
-          </header>
-          <ul class="review__check">
-            <li class="review__i">
-              <svg width="11" height="576">
-                <use xlink:href="#icon-line"></use>
-              </svg>
-            </li>
-            <li class="review__2">
-              <ul class="review__check2">
-                <li>
-                  <div class="review__items">
-                    <ul class="review__lists">
-                      <li class="review__list">
-                        <p class="review__time">16 февраля 2019 20:49</p>
-                        <p class="review__plus">+ 8500 руб.</p>
-                      </li>
-                      <li class="review__list">
-                        <p class="review__list-account">зачисление на счет<br> Сбербанк</p>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="review__items">
-                    <ul class="review__lists">
-                      <li class="review__list">
-                        <p>15 февраля 2019 13:05</p>
-                        <p class="review__plus">+ 1200 руб.</p>
-                      </li>
-                      <li class="review__list">
-                        <p class="review__list-account">зачисление на счет<br>Яндекс.Деньги</p>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="review__items">
-                    <ul class="review__lists">
-                      <li class="review__list">
-                        <p class="review__time">10 февраля 2019 12:23</p>
-                        <p class="review__minus">- 12000 руб.</p>
-                      </li>
-                      <li class="review__list">
-                        <p class="review__list-account">списание за услугу<br>Аренда склада</p>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="review__items">
-                    <ul class="review__lists">
-                      <li class="review__list">
-                        <p class="review__time">02 февраля 2019 14:49</p>
-                        <p class="review__minus">- 1000 руб.</p>
-                      </li>
-                      <li class="review__list">
-                        <p class="review__list-account">списание за услугу<br>Хранение вещей</p>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="review__items">
-                    <ul class="review__lists">
-                      <li class="review__list">
-                        <p class="review__time">25 января 2019 15:33</p>
-                        <p class="review__minus">- 1000 руб.</p>
-                      </li>
-                      <li class="review__list">
-                        <p class="review__list-account">списание за услугу<br>Хранение вещей</p>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="pay box">
-      <form class="form" action="index.html" method="post">
-        <section class="pay__form">
-          <header class="review__header pay__header">
-            <p class="review__header-title pay__header">Ваш текущий баланс:<span>15000 руб.</span></p>
-          </header>
-          <div class="pay__sum">
-            <label for="pay">Пополнение на сумму</label>
-            <input id="pay" type="text" name="" value="1000 руб.">
-          </div>
-          <ul class="pay__lists">
-            <li>
-              <div class="pay__background">
-                <img class="pay__img1" src="/img/pay.png" alt="Банковские карты" width="74" height="53">
-              </div>
-              <p>Банковские карты</p>
-            </li>
-            <li>
-              <div class="pay__background">
-                <img class="pay__img2" src="img/yandex.png" alt="yandex" width="95" height="18">
-              </div>
-              <p>Яндекс кошелек</p>
-            </li>
-            <li>
-              <div class="pay__background">
-                <img class="pay__img3" src="img/one.png" alt="Webmoney WMR" width="102" height="23">
-              </div>
-              <p>Webmoney WMR</p>
-            </li>
-            <li>
-              <div class="pay__background">
-                <img class="pay__img4" src="img/two.png" alt="PayPal" width="104" height="28">
-              </div>
-              <p>PayPal</p>
-            </li>
-          </ul>
-          <div class="pay__content">
-            <input id="pay__content" type="checkbox" name="" value="">
-            <label for="content">Я принимаю <a href="a">правила</a> оказания услуг</label>
-          </div>
-          <input class="button__enter pay__enter" type="submit" name="button"></input>
-        </section>
-      </form>
-    </section>
     <article class="info">
       <ul class="info__lists">
         <li class="info__list">
           <h2>Финансы</h2>
         </li>
         <li class="info__list">
-          <button id="pay-info">Пополнить баланс</button>
+          <a class="ajax" href="pay.html" id="pay-info">Пополнить баланс</a>
         </li>
         <li class="info__list">
-          <button id="review-info">История транзакций</button>
+          <a class="ajax" href="review.html" id="review-info">История транзакций</a>
+          <div class="review__toggle">
+            <input class="review__radio" id="import" type="checkbox" name="radio2" checked>
+            <label for="import">Зачисление</label>
+            <input class="review__radio" id="export" type="checkbox" name="radio3" checked>
+            <label for="export">Списание</label>
+          </div>
         </li>
       </ul>
       <ul class="info__lists">
@@ -435,10 +109,10 @@
           <h2>Профиль</h2>
         </li>
         <li class="info__list">
-          <button id="personal-info">Личная информация</button>
+          <a class="ajax" href="#" id="personal-info">Личная информация</a>
         </li>
         <li class="info__list">
-          <button id="contacts-info">Контакты</button>
+          <a class="ajax" href="contacts.html" id="contacts-info">Контакты</a>
         </li>
       </ul>
       <ul class="info__lists">
@@ -446,10 +120,10 @@
           <h2>Услуги</h2>
         </li>
         <li class="info__list">
-          <button id="order-info">Заказать услугу</button>
+          <a class="ajax" href="order.html" id="order-info">Заказать услугу</a>
         </li>
         <li class="info__list">
-          <button id="service-info">Мои услуги</button>
+          <a class="ajax" href="service.html" id="service-info">Мои услуги</a>
         </li>
       </ul>
       <ul class="info__lists">
@@ -523,7 +197,8 @@
       </form>
     </section>
   </main>
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
   <script src="js/script.js"></script>
 </body>
 

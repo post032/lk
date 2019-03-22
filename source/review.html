@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>kladovochka</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class="page-main container">
+    <section class="review box">
+      <div class="form">
+        <div class="review__wraper">
+          <header class="review__header">
+            <p class="review__header-title">Ваш текущий баланс:<span>15000 руб.</span></p>
+            <div class="review__date">
+              <p class="review__open">показать за:</p>
+              <span class="review__icon">
+                <select>
+                  <option>января</option>
+                  <option>февраля</option>
+                  <option>марта</option>
+                  <option>апреля</option>
+                  <option>мая</option>
+                  <option>июня</option>
+                  <option>июля</option>
+                  <option>августа</option>
+                  <option>сентября</option>
+                  <option>октября</option>
+                  <option>ноября</option>
+                  <option>декабря</option>
+                </select>
+              </span>
+              <span class="review__icon">
+                <select>
+                  <option>2019</option>
+                  <option>2018</option>
+                  <option>2017</option>
+                  <option>2015</option>
+                </select>
+              </span>
+          </header>
+          <ul class="review__check">
+            <li class="review__i">
+              <svg width="11" height="576">
+                <use xlink:href="#icon-line"></use>
+              </svg>
+            </li>
+            <li class="review__2">
+              <ul class="review__check2">
+                <li>
+                  <div class="review__items">
+                    <ul class="review__lists">
+                      <li class="review__list">
+                        <p class="review__time">16 февраля 2019 20:49</p>
+                        <p class="review__plus">+ 8500 руб.</p>
+                      </li>
+                      <li class="review__list">
+                        <p class="review__list-account">зачисление на счет<br> Сбербанк</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="review__items">
+                    <ul class="review__lists">
+                      <li class="review__list">
+                        <p>15 февраля 2019 13:05</p>
+                        <p class="review__plus">+ 1200 руб.</p>
+                      </li>
+                      <li class="review__list">
+                        <p class="review__list-account">зачисление на счет<br>Яндекс.Деньги</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="review__items">
+                    <ul class="review__lists">
+                      <li class="review__list">
+                        <p class="review__time">10 февраля 2019 12:23</p>
+                        <p class="review__minus">- 12000 руб.</p>
+                      </li>
+                      <li class="review__list">
+                        <p class="review__list-account">списание за услугу<br>Аренда склада</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="review__items">
+                    <ul class="review__lists">
+                      <li class="review__list">
+                        <p class="review__time">02 февраля 2019 14:49</p>
+                        <p class="review__minus">- 1000 руб.</p>
+                      </li>
+                      <li class="review__list">
+                        <p class="review__list-account">списание за услугу<br>Хранение вещей</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="review__items">
+                    <ul class="review__lists">
+                      <li class="review__list">
+                        <p class="review__time">25 января 2019 15:33</p>
+                        <p class="review__minus">- 1000 руб.</p>
+                      </li>
+                      <li class="review__list">
+                        <p class="review__list-account">списание за услугу<br>Хранение вещей</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <article class="info">
+      <ul class="info__lists">
+        <li class="info__list">
+          <h2>Финансы</h2>
+        </li>
+        <li class="info__list">
+          <a href="pay.html" id="pay-info">Пополнить баланс</a>
+        </li>
+        <li class="info__list">
+          <a href="#" id="review-info">История транзакций</a>
+          <div class="review__toggle review__toggle-active">
+            <input class="review__radio" id="import" type="checkbox" name="radio2" checked>
+            <label for="import">Зачисление</label>
+            <input class="review__radio" id="export" type="checkbox" name="radio3" checked>
+            <label for="export">Списание</label>
+          </div>
+        </li>
+      </ul>
+      <ul class="info__lists">
+        <li class="info__list">
+          <h2>Профиль</h2>
+        </li>
+        <li class="info__list">
+          <a href="index.html" id="personal-info">Личная информация</a>
+        </li>
+        <li class="info__list">
+          <a href="contacts.html" id="contacts-info">Контакты</a>
+        </li>
+      </ul>
+      <ul class="info__lists">
+        <li class="info__list">
+          <h2>Услуги</h2>
+        </li>
+        <li class="info__list">
+          <a href="order.html" id="order-info">Заказать услугу</a>
+        </li>
+        <li class="info__list">
+          <a href="service.html" id="service-info">Мои услуги</a>
+        </li>
+      </ul>
+      <ul class="info__lists">
+        <li class="info__list">
+          <h2>Настройки</h2>
+        </li>
+      </ul>
+    </article>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

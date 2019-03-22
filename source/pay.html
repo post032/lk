@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>kladovochka</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div style="display:none">
+    <include src="source/img/img.svg"></include>
+  </div>
+  <main class="page-main container">
+      <section class="pay box">
+        <form class="form" action="index.html" method="post">
+          <section class="pay__form">
+            <header class="review__header pay__header">
+              <p class="review__header-title pay__header">Ваш текущий баланс:<span>15000 руб.</span></p>
+            </header>
+            <div class="pay__sum">
+              <label for="pay">Пополнение на сумму</label>
+              <input id="pay" type="text" name="" value="1000 руб.">
+            </div>
+            <ul class="pay__lists">
+              <li>
+                <div class="pay__background">
+                  <img class="pay__img1" src="/img/pay.png" alt="Банковские карты" width="74" height="53">
+                </div>
+                <p>Банковские карты</p>
+              </li>
+              <li>
+                <div class="pay__background">
+                  <img class="pay__img2" src="img/yandex.png" alt="yandex" width="95" height="18">
+                </div>
+                <p>Яндекс кошелек</p>
+              </li>
+              <li>
+                <div class="pay__background">
+                  <img class="pay__img3" src="img/one.png" alt="Webmoney WMR" width="102" height="23">
+                </div>
+                <p>Webmoney WMR</p>
+              </li>
+              <li>
+                <div class="pay__background">
+                  <img class="pay__img4" src="img/two.png" alt="PayPal" width="104" height="28">
+                </div>
+                <p>PayPal</p>
+              </li>
+            </ul>
+            <div class="pay__content">
+              <input id="pay__content" type="checkbox" name="" value="">
+              <label for="content">Я принимаю <a href="a">правила</a> оказания услуг</label>
+            </div>
+            <input class="button__enter pay__enter" type="submit" name="button"></input>
+          </section>
+        </form>
+      </section>
+      <article class="info">
+        <ul class="info__lists">
+          <li class="info__list">
+            <h2>Финансы</h2>
+          </li>
+          <li class="info__list">
+            <a href="#" id="pay-info">Пополнить баланс</a>
+          </li>
+          <li class="info__list">
+            <a href="review.html" id="review-info">История транзакций</a>
+            <div class="review__toggle">
+              <input class="review__radio" id="import" type="checkbox" name="radio2" checked>
+              <label for="import">Зачисление</label>
+              <input class="review__radio" id="export" type="checkbox" name="radio3" checked>
+              <label for="export">Списание</label>
+            </div>
+          </li>
+        </ul>
+        <ul class="info__lists">
+          <li class="info__list">
+            <h2>Профиль</h2>
+          </li>
+          <li class="info__list">
+            <a href="index.html" id="personal-info">Личная информация</a>
+          </li>
+          <li class="info__list">
+            <a href="contacts.html" id="contacts-info">Контакты</a>
+          </li>
+        </ul>
+        <ul class="info__lists">
+          <li class="info__list">
+            <h2>Услуги</h2>
+          </li>
+          <li class="info__list">
+            <a href="order.html" id="order-info">Заказать услугу</a>
+          </li>
+          <li class="info__list">
+            <a href="service.html" id="service-info">Мои услуги</a>
+          </li>
+        </ul>
+        <ul class="info__lists">
+          <li class="info__list">
+            <h2>Настройки</h2>
+          </li>
+        </ul>
+      </article>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

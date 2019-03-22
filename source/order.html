@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>kladovochka</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div style="display:none">
+    <include src="source/img/img.svg"></include>
+  </div>
+  <main class="page-main container">
+      <section class="order box">
+        <div class="form">
+          <ul class="order__lists">
+            <li>
+              <ul class="order__items">
+                <li class="order__icon">
+                  <svg width="37" height="37">
+                    <use xlink:href="#icon-furniture"></use>
+                  </svg>
+                </li>
+                <li class="order__text">
+                  <h2>Хранение мебели</h2>
+                  <p>Когда требуется хранение мебели в СПб, без мини-склада не обойтись. А необходимость в этой услуге может возникнуть в самых разных случаях: при переезде, при ремонте, при сдаче квартиры посторонним людям, при смене офиса. Раньше в
+                    таких ситуациях человек сталкивался с огромной проблемой. Сегодня её решение очевидно – обратиться в мувинговую компанию, которая не только способна обеспечить временное хранение мебели, но и её полную сохранность.</p>
+                  <div class="order__button">
+                    <div>
+                      <a class="order__link order__request" href="#">Запросить</a>
+                      <a class="order__link order__tariff" href="#">Тарифы</a>
+                    </div>
+                    <a class="order__link2" href="#">узнать подробнее</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="order__items">
+                <li class="order__icon">
+                  <svg width="37" height="37">
+                    <use xlink:href="#icon-warehouse"></use>
+                  </svg>
+                </li>
+                <li class="order__text">
+                  <h2>Аренда склада</h2>
+                  <p>Аренда склада в Петербурге – необходимая услуга для бизнеса и частных лиц. В ней нуждаются не только производственные и торговые компании, но и другие организации, а также обычные люди. На данный момент в городе имеется довольно
+                    большой выбор мест для размещения товаров. Однако помещений под аренду склада для хранения вещей не очень много.</p>
+                  <div class="order__button">
+                    <div>
+                      <a class="order__link order__request" href="#">Запросить</a>
+                      <a class="order__link order__tariff" href="#">Тарифы</a>
+                    </div>
+                    <a class="order__link2" href="#">узнать подробнее</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="order__items">
+                <li class="order__icon">
+                  <svg width="37" height="37">
+                    <use xlink:href="#icon-storage"></use>
+                  </svg>
+                </li>
+                <li class="order__text">
+                  <h2>Временное хранение вещей</h2>
+                  <p>Сегодня для многих из нас актуальна услуга временного хранения вещей. Благодаря ей можно размесить собственное имущество или имущество компании на территории мувинговой компании. Спектр предметов может быть самым разным, начиная
+                    от ненужной в данный момент мебели и заканчивая архивной документацией фирм, срок хранения которой ещё не подошёл к концу. К слову, эта услуга очень популярна за рубежом. В Америке, например, существует свыше 50 тыс. таких
+                    складских комплексов.</p>
+                  <div class="order__button">
+                    <div>
+                      <a class="order__link order__request" href="#">Запросить</a>
+                      <a class="order__link order__tariff" href="#">Тарифы</a>
+                    </div>
+                    <a class="order__link2" href="#">узнать подробнее</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <article class="info">
+        <ul class="info__lists">
+          <li class="info__list">
+            <h2>Финансы</h2>
+          </li>
+          <li class="info__list">
+            <a href="pay.html" id="pay-info">Пополнить баланс</a>
+          </li>
+          <li class="info__list">
+            <a href="review.html" id="review-info">История транзакций</a>
+            <div class="review__toggle">
+              <input class="review__radio" id="import" type="checkbox" name="radio2" checked>
+              <label for="import">Зачисление</label>
+              <input class="review__radio" id="export" type="checkbox" name="radio3" checked>
+              <label for="export">Списание</label>
+            </div>
+          </li>
+        </ul>
+        <ul class="info__lists">
+          <li class="info__list">
+            <h2>Профиль</h2>
+          </li>
+          <li class="info__list">
+            <a href="index.html" id="personal-info">Личная информация</a>
+          </li>
+          <li class="info__list">
+            <a href="contacts.html" id="contacts-info">Контакты</a>
+          </li>
+        </ul>
+        <ul class="info__lists">
+          <li class="info__list">
+            <h2>Услуги</h2>
+          </li>
+          <li class="info__list">
+            <a href="#" id="order-info">Заказать услугу</a>
+          </li>
+          <li class="info__list">
+            <a href="service.html" id="service-info">Мои услуги</a>
+          </li>
+        </ul>
+        <ul class="info__lists">
+          <li class="info__list">
+            <h2>Настройки</h2>
+          </li>
+        </ul>
+      </article>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
