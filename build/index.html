@@ -107,15 +107,15 @@
     <section class="personal box">
       <form class="form" action="index.html" method="post">
         <div class="box__block">
-          <label for="">Имя</label>
-          <input class="box__input" id="" type="text" placeholder="Дмитрий">
-          <label for="">Фамилия</label>
-          <input class="box__input" id="" type="text" placeholder="Шевцов">
-          <label for="">Отчество</label>
-          <input class="box__input" id="" type="text" placeholder="Владимирович">
+          <label for="name1">Имя</label>
+          <input class="box__input" id="name1" type="text" placeholder="Дмитрий">
+          <label for="surname">Фамилия</label>
+          <input class="box__input" id="surname" type="text" placeholder="Шевцов">
+          <label for="name3">Отчество</label>
+          <input class="box__input" id="name3" type="text" placeholder="Владимирович">
           <label for="">Дата рождения</label>
           <div class="personal__data">
-            <select id="">
+            <select>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -148,7 +148,7 @@
               <option>30</option>
               <option>31</option>
             </select>
-            <select id="">
+            <select>
               <option>января</option>
               <option>февраля</option>
               <option>марта</option>
@@ -162,7 +162,7 @@
               <option>ноября</option>
               <option>декабря</option>
             </select>
-            <select id="">
+            <select>
               <option>2000</option>
               <option>1999</option>
               <option>1998</option>
@@ -171,8 +171,8 @@
               <option>1995</option>
             </select>
           </div>
-          <label for="">Местоположение</label>
-          <input class="personal__input" id="" type="text" placeholder="Санкт-Петербург">
+          <label for="map">Местоположение</label>
+          <input class="box__input" id="map" type="text" placeholder="Санкт-Петербург">
           <div class="personal__button button">
             <input class="button__cancel" type="button" name="" value="Отменить">
             <input class="button__enter" type="submit" value="Подтвердить">
@@ -515,10 +515,10 @@
           <h2>Финансы</h2>
         </li>
         <li class="info__list">
-          <button>Пополнить баланс</button>
+          <button id="pay-info">Пополнить баланс</button>
         </li>
         <li class="info__list">
-          <button>История транзакций</button>
+          <button id="review-info">История транзакций</button>
         </li>
       </ul>
       <ul class="info__lists">
@@ -526,10 +526,10 @@
           <h2>Профиль</h2>
         </li>
         <li class="info__list">
-          <button>Личная информация</button>
+          <button id="personal-info">Личная информация</button>
         </li>
         <li class="info__list">
-          <button>Контакты</button>
+          <button id="contacts-info">Контакты</button>
         </li>
       </ul>
       <ul class="info__lists">
@@ -537,10 +537,10 @@
           <h2>Услуги</h2>
         </li>
         <li class="info__list">
-          <button>Заказать услугу</button>
+          <button id="order-info">Заказать услугу</button>
         </li>
         <li class="info__list">
-          <button>Мои услуги</button>
+          <button id="service-info">Мои услуги</button>
         </li>
       </ul>
       <ul class="info__lists">
@@ -550,11 +550,11 @@
       </ul>
     </article>
 
-    <section class="modal">
+    <section style="display:none;" class="modal">
       <form class="modal__form" action="index.html" method="post">
-        <div>
-          <button type="button" name="button">Вход</button>
-          <button type="button" name="button">Регистрация</button>
+        <div class="modal__toggle-block">
+          <button id="enter" class="modal__toggle modal__toggle--enter modal__toggle--active" type="button" name="button"><span>Вход</span></button>
+          <button id="registration" class="modal__toggle modal__toggle--registration" type="button" name="button"><span>Регистрация</span></button>
         </div>
         <section class="modal-enter">
           <label for="login">E-mail или логин</label>
@@ -563,51 +563,50 @@
           <input class="modal__input" id="password" type="password" placeholder="*************">
           <div class="modal__remember">
             <a class="modal__forget" href="#">забыли пароль?</a>
-            <label>
-              <input type="radio" name="remember">
-              Запомнить меня</label>
+            <input id="radio1" class="modal__radio" type="checkbox" name="remember1">
+            <label for="radio1">Запомнить меня</label>
+          </div>
+          <div class="button modal__button">
+            <input class="button__cancel" type="button" name="" value="Отменить">
+            <input class="button__enter" type="submit" value="Войти">
           </div>
         </section>
-        <div class="button">
-          <input class="button__cancel" type="button" name="" value="Отменить">
-          <input class="button__enter" type="submit" value="Войти">
-        </div>
         <section class="modal-registration">
-          <label for="name">ФИО</label>
-          <input class="modal__input" id="name" type="text" placeholder="Шевцов Дмитрий Владимирович">
+          <label class="modal__valid" for="name">ФИО</label>
+          <input class="modal__input" id="name" type="text" value="Шевцов Дмитрий Владимирович">
           <div class="modal__number">
             <div>
-              <label for="series">Серия</label>
-              <input id="series" type="text" placeholder="12 34">
+              <label class="modal__valid" for="series">Серия</label>
+              <input id="series" type="text" value="12 34">
             </div>
             <div>
-              <label for="number">Номер</label>
-              <input id="number" type="text" placeholder="567890">
+              <label class="modal__valid" for="number">Номер</label>
+              <input id="number" type="text" value="567890">
             </div>
           </div>
-          <label for="mail">E-mail</label>
-          <input class="modal__input" id="mail" type="text" placeholder="shestpsov@gmail.com">
-          <label for="phone">Номер телефона</label>
-          <input class="modal__input" id="phone" type="text" placeholder="89216210520">
+          <label class="modal__valid" for="mail">E-mail</label>
+          <input class="modal__input" id="mail" type="text" value="shestpsov@gmail.com">
+          <label class="modal__valid" for="phone">Номер телефона</label>
+          <input class="modal__input" id="phone" type="text" value="89216210520">
           <label for="r-login">Логин</label>
           <input class="modal__input" id="r-login" type="text" placeholder="shestpsov001">
           <div class="modal__password">
             <div>
-              <label for="r-password">Пароль</label>
-              <input id="r-password" type="password" placeholder="**********">
+              <label class="modal__valid" for="r-password">Пароль</label>
+              <input id="r-password" type="password" value="**********">
             </div>
             <div>
-              <label for="r-password2">Пароль еще раз</label>
-              <input id="r-password2" type="password" placeholder="**********">
+              <label class="modal__valid" for="r-password2">Пароль еще раз</label>
+              <input id="r-password2" type="password" value="**********">
             </div>
           </div>
           <div class="modal__remember">
-            <a class="modal__forget" href="#">забыли пароль?</a>
-            <label>
-              <input type="checkbox" name="remember">
-              Я согласен на обработку <a href="#">персональных данных</a></label>
+              <input id="radio" class="modal__radio" type="checkbox" name="remember">
+              <label for="radio">Запомнить меня</label>
+              <input id="check" class="modal__check" type="checkbox" name="personal">
+              <label for="check" class="modal__personal"><p class="modal__remember-label">Я согласен на обработку <span>персональных данных</span></p></label>
           </div>
-          <div class="button">
+          <div class="button modal__button">
             <input class="button__cancel" type="button" name="" value="Отменить">
             <input class="button__enter" type="submit" value="Подтвердить">
           </div>

@@ -1,62 +1,52 @@
-$(function(){
-    $('#link1').on('click', function() {
-       $('#window1').slideToggle(300, function(){
-            if( $(this).hasClass('toriff__open')){
-                $(this).addClass('toriff__close');
-                $(this).removeClass('toriff__open');
-                $(this).removeAttr('style');
-                $(this).hide();
-                $('#header1').addClass('tariff__header--radius')
-            }
-            else {
-              $(this).addClass('toriff__open');
-              $(this).removeClass('toriff__close');
-              $(this).removeAttr('style');
-              $('#header1').removeClass('tariff__header--radius')
-              $('.toriff__open').show();
-            }
-       });
-    });
+
+$('#registration').click(function(){
+ $('.modal-registration').show();
+ $('.modal-enter').hide();
+ $(this).addClass('modal__toggle--active');
+ $('#enter').removeClass('modal__toggle--active');
 });
 
-$(function(){
-    $('#link2').on('click', function() {
-       $('#window2').slideToggle(300, function(){
-            if( $(this).hasClass('toriff__close')){
-                $(this).addClass('toriff__open');
-                $(this).removeClass('toriff__close');
-                $(this).removeAttr('style');
-                $('#header2').removeClass('tariff__header--radius')
-                $('.toriff__open').show();
-            }
-            else {
-              $(this).removeClass('toriff__open');
-              $(this).addClass('toriff__close');
-              $(this).removeAttr('style');
-              $(this).hide();
-              $('#header2').addClass('tariff__header--radius')
-            }
-       });
-    });
+$('#enter').click(function(){
+ $('.modal-enter').show();
+ $('.modal-registration').hide();
+ $(this).addClass('modal__toggle--active');
+ $('#registration').removeClass('modal__toggle--active');
 });
 
-$(function(){
-    $('#link3').on('click', function() {
-       $('#window3').slideToggle(300, function(){
-            if( $(this).hasClass('toriff__open')){
-                $(this).addClass('toriff__close');
-                $(this).removeClass('toriff__open');
-                $(this).removeAttr('style');
-                $(this).hide();
-                $('#header3').addClass('tariff__header--radius')
-            }
-            else {
-              $(this).addClass('toriff__open');
-              $(this).removeClass('toriff__close');
-              $(this).removeAttr('style');
-              $('#header3').removeClass('tariff__header--radius')
-              $('.toriff__open').show();
-            }
-       });
-    });
+//////////////////////
+
+$('#personal-info').click(function(){
+ $('.personal').toggle();
+ $('.modal-registration').hide();
+ $('#personal-info').addClass('active');
+});
+
+$('#contacts-info').click(function(){
+ $('.contacts').toggle();
+ $('.modal-registration').hide();
+ $('#contacts-info').addClass('active');
+});
+
+$('#order-info').click(function(){
+ $('.order').toggle();
+ $('.modal-registration').hide();
+ $('#order-info').addClass('active');
+});
+
+$('#service-info').click(function(){
+ $('.service').toggle();
+ $('.modal-registration').hide();
+ $('#service-info').addClass('active');
+});
+
+$('#review-info').click(function(){
+ $('.review').toggle();
+ $('.modal-registration').hide();
+ $('#review-info').addClass('active');
+});
+
+$('#pay-info').click(function(){
+ $('.pay').toggle();
+ $('.modal-registration').hide();
+ $('#pay-info').addClass('active');
 });
