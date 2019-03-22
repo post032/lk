@@ -1,0 +1,95 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  background: #ffffff;
+  max-width: 600px;
+}
+
+.modal__form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.modal-registration {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-registration,
+.modal-enter {
+  width: 90%;
+}
+
+.modal__input {
+  width: 90%;
+  height: 38px;
+  background: #E0E6E7;
+  border-radius: 4px;
+  border: none;
+  padding-left: 10px;
+}
+.modal-registration label,
+.modal-enter label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: normal;
+  color: #565656;
+}
+
+.modal__forget {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: normal;
+  text-align: right;
+  color: #565656;
+}
+
+.modal__remember {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.modal__number,
+.modal__password {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.modal__number div,
+.modal__password div {
+  display: flex;
+  flex-direction: column;
+}
+
+// .modal__number {
+//   margin-right: 1%;
+// }
+
+.modal__number div input,
+.modal__password div input {
+width: 100%;
+height: 39px;
+background: #E0E6E7;
+border-radius: 4px;
+border: none;
+padding-left: 10px;
+}
+
+@media (min-width: @size-tablet) {
+.modal__number,
+.modal__password {
+  flex-direction: row;
+}
+}

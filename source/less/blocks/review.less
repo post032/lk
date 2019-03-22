@@ -1,0 +1,169 @@
+.review {
+  display: none;
+  box-sizing: border-box;
+}
+
+.review__header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #ECECEC;
+  height: 53px;
+  justify-content: space-around;
+}
+
+.review__date {
+  width: 40%;
+  display: flex;
+}
+
+.review__i {
+  padding-left: 5%;
+}
+
+.review__header-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: normal;
+  color: #272727;
+  width: 40%;
+}
+
+.review__header-title span {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: normal;
+  color: #F28E1C;
+}
+
+.review__date select {
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: normal;
+  text-align: right;
+  color: #565656;
+  border: none;
+  background: none;
+  width: 100px;
+}
+
+.review__data p {}
+
+.review__check,
+.review__check2 {
+  padding: 0;
+  list-style-type: none;
+}
+
+.review__check {
+  display: flex;
+  flex-direction: row;
+}
+
+.review__lists {
+  display: flex;
+  padding-top: 0;
+  list-style-type: none;
+  display: flex;
+justify-content: space-between;
+}
+
+.review__wraper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.review__time {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: normal;
+  color: #565656;
+}
+
+.review__minus {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: normal;
+  color: #0073DB;
+  margin: 0;
+}
+
+.review__plus {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: normal;
+  color: #F28E1C;
+  margin: 0;
+}
+
+.review__2 {
+  width: 100%;
+  display: flex;
+}
+
+.review__check2 {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review__check2 li {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+  margin-top: 10px;
+}
+
+.review__list-account {
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: normal;
+text-align: right;
+color: #565656;
+}
+
+.review__open {
+display: none;
+}
+
+@media (min-width: @size-tablet) {
+  .review {
+    display: none;
+  }
+
+  .review__header-title {
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .review__header-title span {
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .review__open {
+    display: flex;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: normal;
+  text-align: right;
+  color: #565656;
+  }
+
+}
+
+@media (min-width: @size-desktop) {
+  .review {
+    display: none;
+  }
+}
