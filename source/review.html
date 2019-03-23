@@ -9,39 +9,44 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="source/img/img.svg"></include>
+  </div>
   <main class="page-main container">
     <section class="review box">
       <div class="form">
+        <button class="box__button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+        <h1 class="visually-hidden">Транзакции</h1>
+        <header class="review__header">
+          <p class="review__header-title">Ваш текущий баланс:<span>15000 руб.</span></p>
+          <div class="review__date">
+            <p class="review__open">показать за:</p>
+            <span class="review__icon">
+              <select>
+                <option>января</option>
+                <option>февраля</option>
+                <option>марта</option>
+                <option>апреля</option>
+                <option>мая</option>
+                <option>июня</option>
+                <option>июля</option>
+                <option>августа</option>
+                <option>сентября</option>
+                <option>октября</option>
+                <option>ноября</option>
+                <option>декабря</option>
+              </select>
+            </span>
+            <span class="review__icon2">
+              <select>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2015</option>
+              </select>
+            </span>
+        </header>
         <div class="review__wraper">
-          <header class="review__header">
-            <p class="review__header-title">Ваш текущий баланс:<span>15000 руб.</span></p>
-            <div class="review__date">
-              <p class="review__open">показать за:</p>
-              <span class="review__icon">
-                <select>
-                  <option>января</option>
-                  <option>февраля</option>
-                  <option>марта</option>
-                  <option>апреля</option>
-                  <option>мая</option>
-                  <option>июня</option>
-                  <option>июля</option>
-                  <option>августа</option>
-                  <option>сентября</option>
-                  <option>октября</option>
-                  <option>ноября</option>
-                  <option>декабря</option>
-                </select>
-              </span>
-              <span class="review__icon">
-                <select>
-                  <option>2019</option>
-                  <option>2018</option>
-                  <option>2017</option>
-                  <option>2015</option>
-                </select>
-              </span>
-          </header>
           <ul class="review__check">
             <li class="review__i">
               <svg width="11" height="576">
@@ -58,7 +63,7 @@
                         <p class="review__plus">+ 8500 руб.</p>
                       </li>
                       <li class="review__list">
-                        <p class="review__list-account">зачисление на счет<br> Сбербанк</p>
+                        <p class="review__list-account">зачисление на счет<br> <span>Сбербанк</span></p>
                       </li>
                     </ul>
                   </div>
@@ -67,11 +72,11 @@
                   <div class="review__items">
                     <ul class="review__lists">
                       <li class="review__list">
-                        <p>15 февраля 2019 13:05</p>
+                        <p class="review__time">15 февраля 2019 13:05</p>
                         <p class="review__plus">+ 1200 руб.</p>
                       </li>
                       <li class="review__list">
-                        <p class="review__list-account">зачисление на счет<br>Яндекс.Деньги</p>
+                        <p class="review__list-account">зачисление на счет<br><span>Яндекс.Деньги</span></p>
                       </li>
                     </ul>
                   </div>
@@ -84,7 +89,7 @@
                         <p class="review__minus">- 12000 руб.</p>
                       </li>
                       <li class="review__list">
-                        <p class="review__list-account">списание за услугу<br>Аренда склада</p>
+                        <p class="review__list-account">списание за услугу<br><span>Аренда склада</span></p>
                       </li>
                     </ul>
                   </div>
@@ -97,7 +102,7 @@
                         <p class="review__minus">- 1000 руб.</p>
                       </li>
                       <li class="review__list">
-                        <p class="review__list-account">списание за услугу<br>Хранение вещей</p>
+                        <p class="review__list-account">списание за услугу<br><span>Хранение вещей</span></p>
                       </li>
                     </ul>
                   </div>
@@ -110,7 +115,7 @@
                         <p class="review__minus">- 1000 руб.</p>
                       </li>
                       <li class="review__list">
-                        <p class="review__list-account">списание за услугу<br>Хранение вещей</p>
+                        <p class="review__list-account">списание за услугу<br><span>Хранение вещей</span></p>
                       </li>
                     </ul>
                   </div>
@@ -121,16 +126,16 @@
         </div>
       </div>
     </section>
-    <article class="info">
+    <nav class="info">
       <ul class="info__lists">
         <li class="info__list">
           <h2>Финансы</h2>
         </li>
         <li class="info__list">
-          <a href="pay.html" id="pay-info">Пополнить баланс</a>
+          <a href="pay.html">Пополнить баланс</a>
         </li>
-        <li class="info__list">
-          <a href="#" id="review-info">История транзакций</a>
+        <li class="info__list info-active">
+          <a class="info__link-active" href="review.html" id="review-info">История транзакций</a>
           <div class="review__toggle review__toggle-active">
             <input class="review__radio" id="import" type="checkbox" name="radio2" checked>
             <label for="import">Зачисление</label>
@@ -144,10 +149,10 @@
           <h2>Профиль</h2>
         </li>
         <li class="info__list">
-          <a href="index.html" id="personal-info">Личная информация</a>
+          <a href="index.html">Личная информация</a>
         </li>
         <li class="info__list">
-          <a href="contacts.html" id="contacts-info">Контакты</a>
+          <a href="contacts.html">Контакты</a>
         </li>
       </ul>
       <ul class="info__lists">
@@ -155,10 +160,10 @@
           <h2>Услуги</h2>
         </li>
         <li class="info__list">
-          <a href="order.html" id="order-info">Заказать услугу</a>
+          <a href="order.html">Заказать услугу</a>
         </li>
         <li class="info__list">
-          <a href="service.html" id="service-info">Мои услуги</a>
+          <a href="service.html">Мои услуги</a>
         </li>
       </ul>
       <ul class="info__lists">
@@ -166,7 +171,7 @@
           <h2>Настройки</h2>
         </li>
       </ul>
-    </article>
+    </nav>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->

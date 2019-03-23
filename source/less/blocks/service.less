@@ -1,5 +1,6 @@
 .service {
   box-sizing: border-box;
+  display: none;
 }
 
 .service__lists {
@@ -30,6 +31,7 @@
 .service__item svg {
   margin-top: 15px;
   margin-left: 5%;
+  margin-right: 5%;
 }
 
 .service__still {
@@ -83,6 +85,11 @@
   margin-bottom: 5px;
 }
 
+.service__day span {
+  font-family: "Roboto bold";
+  font-weight: bold;
+}
+
 .service__still button {
   width: 110px;
   height: 33px;
@@ -96,9 +103,13 @@
   color: #FFFFFF;
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Roboto black";
 }
 
 @media (min-width: @size-tablet) {
+  .service {
+    display: flex;
+  }
 
   .service__lists li {
     flex-direction: row;
@@ -107,7 +118,7 @@
     width: 40%;
   }
   .service__still {
-    width: 30%;
+    width: 35%;
   }
 
   service br {

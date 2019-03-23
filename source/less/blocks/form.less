@@ -4,6 +4,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+  flex-direction: column;
 }
 
 .form label {
@@ -19,7 +21,13 @@
 @media (min-width: @size-tablet) {
   .form {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 95%;
     margin-left: 4%;
+  }
+
+  .form label {
+    width: 460px;
   }
 }

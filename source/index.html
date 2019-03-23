@@ -13,6 +13,8 @@
     <section class="personal box">
       <form class="form" action="index.html" method="post">
         <div class="box__block">
+          <button class="box__button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+          <h1 class="visually-hidden">Личная информация</h1>
           <label for="name1">Имя</label>
           <input class="box__input" id="name1" type="text" placeholder="Дмитрий">
           <label for="surname">Фамилия</label>
@@ -21,81 +23,89 @@
           <input class="box__input" id="name3" type="text" placeholder="Владимирович">
           <label for="">Дата рождения</label>
           <div class="personal__data">
-            <select>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
-              <option>33</option>
-              <option>44</option>
-              <option>15</option>
-              <option>16</option>
-              <option>17</option>
-              <option>18</option>
-              <option>19</option>
-              <option>20</option>
-              <option>21</option>
-              <option>22</option>
-              <option>23</option>
-              <option>24</option>
-              <option>25</option>
-              <option>26</option>
-              <option>27</option>
-              <option>28</option>
-              <option>29</option>
-              <option>30</option>
-              <option>31</option>
-            </select>
-            <select>
-              <option>января</option>
-              <option>февраля</option>
-              <option>марта</option>
-              <option>апреля</option>
-              <option>мая</option>
-              <option>июня</option>
-              <option>июля</option>
-              <option>августа</option>
-              <option>сентября</option>
-              <option>октября</option>
-              <option>ноября</option>
-              <option>декабря</option>
-            </select>
-            <select>
-              <option>2000</option>
-              <option>1999</option>
-              <option>1998</option>
-              <option>1997</option>
-              <option>1996</option>
-              <option>1995</option>
-            </select>
+            <span>
+              <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>33</option>
+                <option>44</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
+            </span>
+            <span>
+              <select>
+                <option>января</option>
+                <option>февраля</option>
+                <option>марта</option>
+                <option>апреля</option>
+                <option>мая</option>
+                <option>июня</option>
+                <option>июля</option>
+                <option>августа</option>
+                <option>сентября</option>
+                <option>октября</option>
+                <option>ноября</option>
+                <option>декабря</option>
+              </select>
+            </span>
+            <span>
+              <select>
+                <option>2000</option>
+                <option>1999</option>
+                <option>1998</option>
+                <option>1997</option>
+                <option>1996</option>
+                <option>1995</option>
+              </select>
+            </span>
           </div>
           <label for="map">Местоположение</label>
           <input class="box__input" id="map" type="text" placeholder="Санкт-Петербург">
-          <div class="personal__button button">
-            <input class="button__cancel" type="button" name="" value="Отменить">
-            <input class="button__enter" type="submit" value="Подтвердить">
-          </div>
+          <div class="button__wrapper">
+            <article class="button">
+              <input class="button__cancel" type="button" name="" value="Отменить">
+              <input class="button__enter" type="submit" value="Сохранить">
+              </article>
+            </div>
         </div>
       </form>
     </section>
-    <article class="info">
+    <nav class="info">
       <ul class="info__lists">
         <li class="info__list">
           <h2>Финансы</h2>
         </li>
         <li class="info__list">
-          <a class="ajax" href="pay.html" id="pay-info">Пополнить баланс</a>
+          <a href="pay.html">Пополнить баланс</a>
         </li>
         <li class="info__list">
-          <a class="ajax" href="review.html" id="review-info">История транзакций</a>
+          <a href="review.html">История транзакций</a>
           <div class="review__toggle">
             <input class="review__radio" id="import" type="checkbox" name="radio2" checked>
             <label for="import">Зачисление</label>
@@ -108,11 +118,11 @@
         <li class="info__list">
           <h2>Профиль</h2>
         </li>
-        <li class="info__list">
-          <a class="ajax" href="#" id="personal-info">Личная информация</a>
+        <li class="info__list info-active">
+          <a class="info__link-active" href="index.html" id="personal-info">Личная информация</a>
         </li>
         <li class="info__list">
-          <a class="ajax" href="contacts.html" id="contacts-info">Контакты</a>
+          <a href="contacts.html">Контакты</a>
         </li>
       </ul>
       <ul class="info__lists">
@@ -120,10 +130,10 @@
           <h2>Услуги</h2>
         </li>
         <li class="info__list">
-          <a class="ajax" href="order.html" id="order-info">Заказать услугу</a>
+          <a href="order.html">Заказать услугу</a>
         </li>
         <li class="info__list">
-          <a class="ajax" href="service.html" id="service-info">Мои услуги</a>
+          <a href="service.html">Мои услуги</a>
         </li>
       </ul>
       <ul class="info__lists">
@@ -131,9 +141,9 @@
           <h2>Настройки</h2>
         </li>
       </ul>
-    </article>
+    </nav>
 
-    <section style="display:none;" class="modal">
+    <section style="display:none" class="modal">
       <form class="modal__form" action="index.html" method="post">
         <div class="modal__toggle-block">
           <button id="enter" class="modal__toggle modal__toggle--enter modal__toggle--active" type="button" name="button"><span>Вход</span></button>
@@ -154,7 +164,7 @@
             <input class="button__enter" type="submit" value="Войти">
           </div>
         </section>
-        <section class="modal-registration">
+        <section id="registration" class="modal-registration">
           <label class="modal__valid" for="name">ФИО</label>
           <input class="modal__input" id="name" type="text" value="Шевцов Дмитрий Владимирович">
           <div class="modal__number">
@@ -175,19 +185,21 @@
           <input class="modal__input" id="r-login" type="text" placeholder="shestpsov001">
           <div class="modal__password">
             <div>
-              <label class="modal__valid" for="r-password">Пароль</label>
-              <input id="r-password" type="password" value="**********">
+              <label class="modal__valid" for="pass1">Пароль</label>
+              <input id="pass1" type="password" value="**********">
             </div>
             <div>
-              <label class="modal__valid" for="r-password2">Пароль еще раз</label>
-              <input id="r-password2" type="password" value="**********">
+              <label class="modal__valid" for="pass2">Пароль еще раз</label>
+              <input id="pass2" type="password" value="**********">
             </div>
           </div>
           <div class="modal__remember">
-              <input id="radio" class="modal__radio" type="checkbox" name="remember">
-              <label for="radio">Запомнить меня</label>
-              <input id="check" class="modal__check" type="checkbox" name="personal">
-              <label for="check" class="modal__personal"><p class="modal__remember-label">Я согласен на обработку <span>персональных данных</span></p></label>
+            <input id="radio" class="modal__radio" type="checkbox" name="remember">
+            <label for="radio">Запомнить меня</label>
+            <input id="check" class="modal__check" type="checkbox" name="personal">
+            <label for="check" class="modal__personal">
+              <p class="modal__remember-label">Я согласен на обработку <span>персональных данных</span></p>
+            </label>
           </div>
           <div class="button modal__button">
             <input class="button__cancel" type="button" name="" value="Отменить">
@@ -197,8 +209,8 @@
       </form>
     </section>
   </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 

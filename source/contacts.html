@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,95 +10,108 @@
 
 <body>
   <main class="page-main container">
-      <section class="contacts box">
-        <form class="form" action="index.html" method="post">
-          <div class="box__block">
-            <label for="site">Сайт</label>
-            <input class="box__input" id="site" type="text">
-            <label for="tel">Телефон</label>
-            <input class="box__input" id="tel" type="text" placeholder="89004561365">
-            <label for="post">Почта</label>
-            <input class="box__input" id="post" type="text" placeholder="shestpsov@gmail.com">
-            <label for="">Мессенджер</label>
-            <div class="contacts__messenger">
-              <div class="contacts__item">
-                <select id="">
+    <section class="contacts box">
+      <form class="form" action="index.html" method="post">
+        <div class="box__block">
+          <button class="box__button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+          <h1 class="visually-hidden">Контакты</h1>
+          <label for="site">Сайт</label>
+          <input class="box__input" id="site" type="text">
+          <label for="tel">Телефон</label>
+          <input class="box__input" id="tel" type="text" value="89004561365">
+          <label for="post">Почта</label>
+          <input class="box__input" id="post" type="text" value="shestpsov@gmail.com">
+          <label for="">Мессенджер</label>
+          <div class="contacts__messenger">
+            <div class="contacts__item">
+              <span>
+                <select>
                   <option>WhatsApp</option>
                   <option>Telegram</option>
                   <option>Viber</option>
                 </select>
-                <span class="contacts__basket"></span>
-                <input type="text" placeholder="+7 (921) 621 05 20">
-              </div>
-              <div class="contacts__item">
-                <select id="">
+              </span>
+              <span class="contacts__basket">
+                <input class="contacts__input" type="text" value="+7 (921) 621 05 20">
+              </span>
+            </div>
+            <div class="contacts__item">
+              <span>
+                <select>
                   <option>Telegram</option>
                 </select>
-                <span class="contacts__basket"></span>
-                <input type="text" placeholder="@shestoi_pes">
-              </div>
-              <div class="contacts__item">
-                <select id="">
+              </span>
+              <span class="contacts__basket">
+                <input class="contacts__input" type="text" value="@shestoi_pes">
+              </span>
+            </div>
+            <div class="contacts__item">
+              <span>
+                <select>
                   <option>Добавить</option>
                 </select>
-              </div>
-            </div>
-            <div class="personal__button button">
-              <input class="button__cancel" type="button" name="" value="Отменить">
-              <input class="button__enter" type="submit" value="Подтвердить">
+              </span>
             </div>
           </div>
-        </form>
-      </section>
-      <article class="info">
-        <ul class="info__lists">
-          <li class="info__list">
-            <h2>Финансы</h2>
-          </li>
-          <li class="info__list">
-            <a href="pay.html" id="pay-info">Пополнить баланс</a>
-          </li>
-          <li class="info__list">
-            <a href="review.html" id="review-info">История транзакций</a>
-            <div class="review__toggle">
-              <input class="review__radio" id="import" type="checkbox" name="radio2" checked>
-              <label for="import">Зачисление</label>
-              <input class="review__radio" id="export" type="checkbox" name="radio3" checked>
-              <label for="export">Списание</label>
+          <div class="button__wrapper">
+            <article class="button">
+              <input class="button__cancel" type="button" name="" value="Отменить">
+              <input class="button__enter" type="submit" value="Сохранить">
+              </article>
             </div>
-          </li>
-        </ul>
-        <ul class="info__lists">
-          <li class="info__list">
-            <h2>Профиль</h2>
-          </li>
-          <li class="info__list">
-            <a href="index.html" id="personal-info">Личная информация</a>
-          </li>
-          <li class="info__list">
-            <a href="#" id="contacts-info">Контакты</a>
-          </li>
-        </ul>
-        <ul class="info__lists">
-          <li class="info__list">
-            <h2>Услуги</h2>
-          </li>
-          <li class="info__list">
-            <a href="order.html" id="order-info">Заказать услугу</a>
-          </li>
-          <li class="info__list">
-            <a href="service.html" id="service-info">Мои услуги</a>
-          </li>
-        </ul>
-        <ul class="info__lists">
-          <li class="info__list">
-            <h2>Настройки</h2>
-          </li>
-        </ul>
-      </article>
-    </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
-    <script src="js/script.js"></script>
-  </body>
+        </div>
+      </form>
+    </section>
+    <nav class="info">
+      <ul class="info__lists">
+        <li class="info__list">
+          <h2>Финансы</h2>
+        </li>
+        <li class="info__list">
+          <a href="pay.html">Пополнить баланс</a>
+        </li>
+        <li class="info__list">
+          <a href="review.html">История транзакций</a>
+          <div class="review__toggle">
+            <input class="review__radio" id="import" type="checkbox" name="radio2" checked>
+            <label for="import">Зачисление</label>
+            <input class="review__radio" id="export" type="checkbox" name="radio3" checked>
+            <label for="export">Списание</label>
+          </div>
+        </li>
+      </ul>
+      <ul class="info__lists">
+        <li class="info__list">
+          <h2>Профиль</h2>
+        </li>
+        <li class="info__list">
+          <a href="index.html">Личная информация</a>
+        </li>
+        <li class="info__list info-active">
+          <a class="info__link-active" href="contacts.html" id="contacts-info">Контакты</a>
+        </li>
+      </ul>
+      <ul class="info__lists">
+        <li class="info__list">
+          <h2>Услуги</h2>
+        </li>
+        <li class="info__list">
+          <a href="order.html">Заказать услугу</a>
+        </li>
+        <li class="info__list">
+          <a href="service.html">Мои услуги</a>
+        </li>
+      </ul>
+      <ul class="info__lists">
+        <li class="info__list">
+          <h2>Настройки</h2>
+        </li>
+      </ul>
+    </nav>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>

@@ -1,5 +1,6 @@
 .order {
   box-sizing: border-box;
+  display: none;
 }
 
 .order__items,
@@ -81,6 +82,7 @@
   font-weight: 900;
   color: #FFFFFF;
   margin-right: 2%;
+  font-family: "Roboto black";
 }
 
 .order__tariff {
@@ -97,10 +99,15 @@
   line-height: normal;
   text-align: right;
   color: #0073DB;
+  font-family: "Roboto light";
 }
 
 @media (min-width: @size-tablet) {
+.order {
+  display: flex;
+}
+
   .order__button div {
-    width: 40%;
+    width: 45%;
   }
 }

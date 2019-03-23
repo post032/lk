@@ -105,6 +105,8 @@
   <main class="page-main container">
       <section class="service box">
         <div class="form">
+          <button class="box__button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+          <h1 class="visually-hidden">Услуги</h1>
           <ul class="service__lists">
             <li>
               <div class="service__item">
@@ -118,7 +120,7 @@
                 </div>
               </div>
               <div class="service__still">
-                <p class="service__day">осталось<strong>10 дней</strong></p>
+                <p class="service__day">осталось<span>10 дней</span></p>
                 <button type="button" name="button">Продлить</button>
               </div>
             </li>
@@ -134,7 +136,7 @@
                 </div>
               </div>
               <div class="service__still">
-                <p class="service__day">осталось<strong>14 дней</strong></p>
+                <p class="service__day">осталось<span>14 дней</span></p>
                 <button type="button" name="button">Продлить</button>
               </div>
             </li>
@@ -150,7 +152,7 @@
                 </div>
               </div>
               <div class="service__still">
-                <p class="service__day">осталось <strong>8 дней</strong></p>
+                <p class="service__day">осталось <span>8 дней</span></p>
                 <button type="button" name="button">Продлить</button>
               </div>
             </li>
@@ -166,23 +168,23 @@
                 </div>
               </div>
               <div class="service__still">
-                <p class="service__day">осталось <strong>13 дней</strong></p>
+                <p class="service__day">осталось <span>13 дней</span></p>
                 <button type="button" name="button">Продлить</button>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <article class="info">
+      <nav class="info">
         <ul class="info__lists">
           <li class="info__list">
             <h2>Финансы</h2>
           </li>
           <li class="info__list">
-            <a href="pay.html" id="pay-info">Пополнить баланс</a>
+            <a href="pay.html">Пополнить баланс</a>
           </li>
           <li class="info__list">
-            <a href="review.html" id="review-info">История транзакций</a>
+            <a href="review.html">История транзакций</a>
             <div class="review__toggle">
               <input class="review__radio" id="import" type="checkbox" name="radio2" checked="">
               <label for="import">Зачисление</label>
@@ -196,10 +198,10 @@
             <h2>Профиль</h2>
           </li>
           <li class="info__list">
-            <a href="index.html" id="personal-info">Личная информация</a>
+            <a href="index.html">Личная информация</a>
           </li>
           <li class="info__list">
-            <a href="contacts.html" id="contacts-info">Контакты</a>
+            <a href="contacts.html">Контакты</a>
           </li>
         </ul>
         <ul class="info__lists">
@@ -207,10 +209,10 @@
             <h2>Услуги</h2>
           </li>
           <li class="info__list">
-            <a href="order.html" id="order-info">Заказать услугу</a>
+            <a href="order.html">Заказать услугу</a>
           </li>
-          <li class="info__list">
-            <a href="#" id="service-info">Мои услуги</a>
+          <li class="info__list info-active">
+            <a class="info__link-active" href="service.html" id="service-info">Мои услуги</a>
           </li>
         </ul>
         <ul class="info__lists">
@@ -218,7 +220,7 @@
             <h2>Настройки</h2>
           </li>
         </ul>
-      </article>
+      </nav>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
