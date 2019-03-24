@@ -10,7 +10,8 @@
 
 <body>
   <main class="page-main container">
-    <section class="personal box">
+    <button id="open-nav" class="nav-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <section id="content" class="personal box">
       <form class="form" action="index.html" method="post">
         <div class="box__block">
           <button class="box__button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
@@ -96,9 +97,10 @@
         </div>
       </form>
     </section>
-    <nav class="info">
+    <nav id="nav" class="info nav-hide">
+      <button id="close-nav" class="nav-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Финансы</h2>
         </li>
         <li class="info__list">
@@ -115,18 +117,18 @@
         </li>
       </ul>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Профиль</h2>
         </li>
         <li class="info__list info-active">
-          <a class="info__link-active" href="index.html" id="personal-info">Личная информация</a>
+          <a href="index.html">Личная информация</a>
         </li>
         <li class="info__list">
           <a href="contacts.html">Контакты</a>
         </li>
       </ul>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Услуги</h2>
         </li>
         <li class="info__list">
@@ -137,7 +139,7 @@
         </li>
       </ul>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Настройки</h2>
         </li>
       </ul>

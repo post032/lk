@@ -10,10 +10,10 @@
 
 <body>
   <main class="page-main container">
-    <section class="contacts box">
+    <button id="open-nav" class="nav-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <section id="content" class="contacts box">
       <form class="form" action="index.html" method="post">
         <div class="box__block">
-          <button class="box__button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
           <h1 class="visually-hidden">Контакты</h1>
           <label for="site">Сайт</label>
           <input class="box__input" id="site" type="text">
@@ -24,32 +24,43 @@
           <label for="">Мессенджер</label>
           <div class="contacts__messenger">
             <div class="contacts__item">
-              <span>
+              <span id="add1">
                 <select>
                   <option>WhatsApp</option>
                   <option>Telegram</option>
                   <option>Viber</option>
                 </select>
               </span>
-              <span class="contacts__basket">
+              <span id="input1">
+              <span class="contacts__basket"></span>
                 <input class="contacts__input" type="text" value="+7 (921) 621 05 20">
               </span>
             </div>
             <div class="contacts__item">
-              <span>
+              <span id="add2">
                 <select>
                   <option>Telegram</option>
+                  <option>WhatsApp</option>
+                  <option>Viber</option>
                 </select>
               </span>
-              <span class="contacts__basket">
+              <span id="input2">
+              <span class="contacts__basket"></span>
                 <input class="contacts__input" type="text" value="@shestoi_pes">
               </span>
             </div>
             <div class="contacts__item">
-              <span>
+              <span id="add3">
                 <select>
                   <option>Добавить</option>
+                  <option>Viber</option>
+                  <option>WhatsApp</option>
+                  <option>Telegram</option>
                 </select>
+              </span>
+              <span id="input3" class="contacts__invisibly">
+              <span class="contacts__basket"></span>
+                <input class="contacts__input" type="text" value="">
               </span>
             </div>
           </div>
@@ -62,9 +73,10 @@
         </div>
       </form>
     </section>
-    <nav class="info">
+    <nav id="nav" class="info nav-hide">
+      <button id="close-nav" class="nav-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Финансы</h2>
         </li>
         <li class="info__list">
@@ -81,18 +93,18 @@
         </li>
       </ul>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Профиль</h2>
         </li>
         <li class="info__list">
           <a href="index.html">Личная информация</a>
         </li>
         <li class="info__list info-active">
-          <a class="info__link-active" href="contacts.html" id="contacts-info">Контакты</a>
+          <a href="contacts.html">Контакты</a>
         </li>
       </ul>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Услуги</h2>
         </li>
         <li class="info__list">
@@ -103,7 +115,7 @@
         </li>
       </ul>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Настройки</h2>
         </li>
       </ul>

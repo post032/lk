@@ -1,5 +1,5 @@
 .pay {
-  display: none;
+  position: relative;
   box-sizing: border-box;
 }
 
@@ -37,9 +37,9 @@
 }
 
 .pay__lists .pay__active p {
-font-family: "Roboto bold";
-font-weight: bold;
-color: #0073DB;
+  font-family: "Roboto bold";
+  font-weight: bold;
+  color: #0073DB;
 }
 
 .pay__active .pay__background {
@@ -215,10 +215,21 @@ color: #0073DB;
   flex-direction: column;
   width: 100%;
 }
+
+.pay__lists li label {
+  width: 100%;
+}
+
+.pay__radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
 @media (min-width: @size-tablet) {
   .pay {
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 }

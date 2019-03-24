@@ -103,9 +103,9 @@
 </symbol></svg>
   </div>
   <main class="page-main container">
-      <section class="order box">
+    <button id="open-nav" class="nav-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <section id="content" class="order box">
         <div class="form">
-          <button class="box__button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
           <h1 class="visually-hidden">Заказы</h1>
           <ul class="order__lists">
             <li>
@@ -175,9 +175,10 @@
           </ul>
         </div>
       </section>
-      <nav class="info">
+      <nav id="nav" class="info nav-hide">
+        <button id="close-nav" class="nav-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class="info__lists">
-          <li class="info__list">
+          <li class="info__list into-tablet">
             <h2>Финансы</h2>
           </li>
           <li class="info__list">
@@ -194,7 +195,7 @@
           </li>
         </ul>
         <ul class="info__lists">
-          <li class="info__list">
+          <li class="info__list into-tablet">
             <h2>Профиль</h2>
           </li>
           <li class="info__list">
@@ -205,18 +206,18 @@
           </li>
         </ul>
         <ul class="info__lists">
-          <li class="info__list">
+          <li class="info__list into-tablet">
             <h2>Услуги</h2>
           </li>
           <li class="info__list info-active">
-            <a class="info__link-active" href="order.html" id="order-info">Заказать услугу</a>
+            <a href="order.html">Заказать услугу</a>
           </li>
           <li class="info__list">
             <a href="service.html">Мои услуги</a>
           </li>
         </ul>
         <ul class="info__lists">
-          <li class="info__list">
+          <li class="info__list into-tablet">
             <h2>Настройки</h2>
           </li>
         </ul>

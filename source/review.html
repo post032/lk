@@ -13,9 +13,9 @@
     <include src="source/img/img.svg"></include>
   </div>
   <main class="page-main container">
-    <section class="review box">
+    <button id="open-nav" class="nav-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <section id="content" class="review box">
       <div class="form">
-        <button class="box__button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
         <h1 class="visually-hidden">Транзакции</h1>
         <header class="review__header">
           <p class="review__header-title">Ваш текущий баланс:<span>15000 руб.</span></p>
@@ -126,17 +126,18 @@
         </div>
       </div>
     </section>
-    <nav class="info">
+    <nav id="nav" class="info nav-hide">
+      <button id="close-nav" class="nav-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Финансы</h2>
         </li>
         <li class="info__list">
           <a href="pay.html">Пополнить баланс</a>
         </li>
         <li class="info__list info-active">
-          <a class="info__link-active" href="review.html" id="review-info">История транзакций</a>
-          <div class="review__toggle review__toggle-active">
+          <a href="review.html">История транзакций</a>
+          <div class="review__toggle">
             <input class="review__radio" id="import" type="checkbox" name="radio2" checked>
             <label for="import">Зачисление</label>
             <input class="review__radio" id="export" type="checkbox" name="radio3" checked>
@@ -145,7 +146,7 @@
         </li>
       </ul>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Профиль</h2>
         </li>
         <li class="info__list">
@@ -156,7 +157,7 @@
         </li>
       </ul>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Услуги</h2>
         </li>
         <li class="info__list">
@@ -167,7 +168,7 @@
         </li>
       </ul>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Настройки</h2>
         </li>
       </ul>

@@ -1,6 +1,6 @@
 .contacts {
   box-sizing: border-box;
-  display: none;
+  position: relative;
 }
 
 .contacts__basket::after {
@@ -12,7 +12,11 @@
   background-repeat: no-repeat;
   position: absolute;
   top: 22px;
-  right: 11px;
+  left: 264px;
+}
+
+.contacts__invisibly {
+  display: none;
 }
 
 .contacts__messenger {
@@ -92,7 +96,6 @@
 
   .contacts__basket::after {
     top: 11px;
-    right: 8px;
   }
 
   .contacts__item select {

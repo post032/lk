@@ -104,9 +104,9 @@
 </symbol></svg>
   </div>
   <main class="page-main container">
-    <section class="pay box">
+    <button id="open-nav" class="nav-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <section id="content" class="pay box">
       <form class="form" action="index.html" method="post">
-        <button class="box__button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
         <h1 class="visually-hidden">Пополнение счета</h1>
         <section class="pay__form">
           <header class="review__header pay__header">
@@ -121,28 +121,40 @@
             </div>
             <ul class="pay__lists">
               <li class="pay__active">
-                <div class="pay__background">
-                  <img class="pay__img1" src="/img/pay.png" alt="Банковские карты" width="74" height="53">
-                </div>
-                <p>Банковские карты</p>
+                <input class="pay__radio" id="cart" type="radio" name="pay" checked="">
+                <label for="cart">
+                  <div class="pay__background">
+                    <img class="pay__img1" src="/img/pay.png" alt="Банковские карты" width="74" height="53">
+                  </div>
+                  <p>Банковские карты</p>
+                </label>
               </li>
               <li>
-                <div class="pay__background">
-                  <img class="pay__img2" src="img/yandex.png" alt="yandex" width="95" height="18">
-                </div>
-                <p>Яндекс кошелек</p>
+                <input class="pay__radio" id="yandexP" type="radio" name="pay">
+                <label for="yandexP">
+                  <div class="pay__background">
+                    <img class="pay__img2" src="img/yandex.png" alt="yandex" width="95" height="18">
+                  </div>
+                  <p>Яндекс кошелек</p>
+                </label>
               </li>
               <li>
-                <div class="pay__background">
-                  <img class="pay__img3" src="img/one.png" alt="Webmoney WMR" width="102" height="23">
-                </div>
-                <p>Webmoney WMR</p>
+                <input class="pay__radio" id="wrm" type="radio" name="pay">
+                <label for="wrm">
+                  <div class="pay__background">
+                    <img class="pay__img3" src="img/one.png" alt="Webmoney WMR" width="102" height="23">
+                  </div>
+                  <p>Webmoney WMR</p>
+                </label>
               </li>
               <li>
-                <div class="pay__background">
-                  <img class="pay__img4" src="img/two.png" alt="PayPal" width="104" height="28">
-                </div>
-                <p>PayPal</p>
+                <input class="pay__radio" id="paypal" type="radio" name="pay">
+                <label for="paypal">
+                  <div class="pay__background">
+                    <img class="pay__img4" src="img/two.png" alt="PayPal" width="104" height="28">
+                  </div>
+                  <p>PayPal</p>
+                </label>
               </li>
             </ul>
             <div class="pay__content">
@@ -154,13 +166,14 @@
         </section>
       </form>
     </section>
-    <nav class="info">
+    <nav id="nav" class="info nav-hide">
+      <button id="close-nav" class="nav-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Финансы</h2>
         </li>
         <li class="info__list info-active">
-          <a class="info__link-active" href="pay.html" id="pay-info">Пополнить баланс</a>
+          <a href="pay.html">Пополнить баланс</a>
         </li>
         <li class="info__list">
           <a href="review.html">История транзакций</a>
@@ -173,7 +186,7 @@
         </li>
       </ul>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Профиль</h2>
         </li>
         <li class="info__list">
@@ -184,7 +197,7 @@
         </li>
       </ul>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Услуги</h2>
         </li>
         <li class="info__list">
@@ -195,7 +208,7 @@
         </li>
       </ul>
       <ul class="info__lists">
-        <li class="info__list">
+        <li class="info__list into-tablet">
           <h2>Настройки</h2>
         </li>
       </ul>
