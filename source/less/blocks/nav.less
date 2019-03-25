@@ -1,99 +1,108 @@
+
 .nav-open {
-  position: absolute;
-  top: -53px;
-  right: 26px;
-  z-index: 2;
   display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
   width: 30px;
   height: 30px;
-  background-color: #ffffff;
-  cursor: pointer;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
   border: none;
-
-  &:active,
-  &:hover {
-    background-color: #ffffff;
-  }
-}
-
-.nav-show {
-  display: flex;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .nav-hide {
   display: none;
 }
 
-.nav-open::before {
-  content: "";
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 21px;
-  height: 2px;
-  background-color: #818181;
-  box-shadow: 0 8px 0 0 #818181, 0 16px 0 0 #818181;
+.nav-show {
+  display: flex;
 }
 
-.nav-open:active::before {
-  background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.3), 0 16px 0 0 rgba(0, 0, 0, 0.3);
+.nav-open:focus {
+  outline: none;
 }
 
-.nav-open::after {
-  content: "";
-  position: absolute;
-  top: 65px;
-  left: -4px;
-  width: 30px;
-  height: 30px;
-  box-shadow: 0 0 2px 0 #818181;
-}
 
-.nav-close {
-  position: absolute;
-  top: -53px;
-  right: 26px;
-  z-index: 2;
+.nav-open span {
   display: block;
-  width: 30px;
-  height: 30px;
-  background-color: #ffffff;
-  cursor: pointer;
-  border: none;
-
-  &:active,
-  &:hover {
-    background-color: #ffffff;
-  }
+  position: absolute;
+  top: 12px;
+  left: 4px;
+  right: 3px;
+  height: 4px;
+  background: #000000;
 }
 
-.nav-close {
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    top: 75px;
-    right: 10px;
-    width: 18px;
-    height: 2px;
-    background-color: #818181;
-    z-index: 110;
-  }
+.nav-open span::before,
+.nav-open span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  content: "";
+}
 
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
+.nav-open span::before {
+  top: -8px;
+}
 
-  &::after {
-    transform: rotate(-45deg);
-  }
+.nav-open span::after {
+  bottom: -8px;
+}
 
-  &:active::after,
-  &:active::before {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+.nav-open--htx {
+  background-color: #ffffff;
+}
+
+.nav-open--htx span {
+  transition: background 0s 0.3s;
+}
+
+.nav-open--htx span::before,
+.nav-open--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.nav-open--htx span::before {
+  transition-property: top, transform;
+}
+
+.nav-open--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* состояние active при открытом меню  */
+.nav-open--htx.is-active {
+  background-color: #ffffff;
+}
+
+.nav-open--htx.is-active span {
+  background: none;
+}
+
+.nav-open--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-open--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.nav-open--htx.is-active span::before,
+.nav-open--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
 }
 
 @media (min-width: @size-tablet) {

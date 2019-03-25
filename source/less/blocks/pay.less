@@ -36,7 +36,7 @@
   margin: 3px;
 }
 
-.pay__lists .pay__active p {
+.pay__lists .pay__active span {
   font-family: "Roboto bold";
   font-weight: bold;
   color: #0073DB;
@@ -144,8 +144,13 @@
 .pay__sum {
   margin-top: 20px;
 }
-
-.pay__lists li p {
+.pay__lists li label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pay__lists li label span {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -154,6 +159,7 @@
   color: #565656;
   width: 100px;
   font-family: "Roboto medium";
+  display: block;
 }
 
 .pay__check {

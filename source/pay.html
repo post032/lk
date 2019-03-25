@@ -13,7 +13,6 @@
     <include src="source/img/img.svg"></include>
   </div>
   <main class="page-main container">
-    <button id="open-nav" class="nav-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <section id="content" class="pay box">
       <form class="form" action="index.html" method="post">
         <h1 class="visually-hidden">Пополнение счета</h1>
@@ -25,7 +24,7 @@
             <div class="pay__sum">
               <label for="pay">Пополнение на сумму</label>
               <span>
-                <input id="pay" type="text" name="" value="1000">
+                <input id="pay" type="text" value="1000">
               </span>
             </div>
             <ul class="pay__lists">
@@ -35,7 +34,7 @@
                   <div class="pay__background">
                     <img class="pay__img1" src="/img/pay.png" alt="Банковские карты" width="74" height="53">
                   </div>
-                  <p>Банковские карты</p>
+                  <span>Банковские карты</span>
                 </label>
               </li>
               <li>
@@ -44,7 +43,7 @@
                   <div class="pay__background">
                     <img class="pay__img2" src="img/yandex.png" alt="yandex" width="95" height="18">
                   </div>
-                  <p>Яндекс кошелек</p>
+                  <span>Яндекс кошелек</span>
                 </label>
               </li>
               <li>
@@ -53,7 +52,7 @@
                   <div class="pay__background">
                     <img class="pay__img3" src="img/one.png" alt="Webmoney WMR" width="102" height="23">
                   </div>
-                  <p>Webmoney WMR</p>
+                  <span>Webmoney WMR</span>
                 </label>
               </li>
               <li>
@@ -62,7 +61,7 @@
                   <div class="pay__background">
                     <img class="pay__img4" src="img/two.png" alt="PayPal" width="104" height="28">
                   </div>
-                  <p>PayPal</p>
+                  <span>PayPal</span>
                 </label>
               </li>
             </ul>
@@ -70,21 +69,20 @@
               <input class="pay__check" id="pay__content" type="checkbox" name="take">
               <label for="pay__content">Я принимаю <a href="#">правила</a> оказания услуг</label>
             </div>
-            <input class="button__enter pay__enter" type="submit" name="button"></input>
+            <input class="button__enter pay__enter" type="submit" name="button">
           </section>
         </section>
       </form>
     </section>
     <nav id="nav" class="info nav-hide">
-      <button id="close-nav" class="nav-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       <ul class="info__lists">
         <li class="info__list into-tablet">
           <h2>Финансы</h2>
         </li>
-        <li class="info__list info-active">
+        <li id="li-1" class="info__list info-active">
           <a href="pay.html">Пополнить баланс</a>
         </li>
-        <li class="info__list">
+        <li id="li-2" class="info__list">
           <a href="review.html">История транзакций</a>
           <div class="review__toggle">
             <input class="review__radio" id="import" type="checkbox" name="radio2" checked>
@@ -98,10 +96,10 @@
         <li class="info__list into-tablet">
           <h2>Профиль</h2>
         </li>
-        <li class="info__list">
+        <li id="li-3" class="info__list">
           <a href="index.html">Личная информация</a>
         </li>
-        <li class="info__list">
+        <li id="li-4" class="info__list">
           <a href="contacts.html">Контакты</a>
         </li>
       </ul>
@@ -109,10 +107,10 @@
         <li class="info__list into-tablet">
           <h2>Услуги</h2>
         </li>
-        <li class="info__list">
+        <li id="li-5" class="info__list">
           <a href="order.html">Заказать услугу</a>
         </li>
-        <li class="info__list">
+        <li id="li-6" class="info__list">
           <a href="service.html">Мои услуги</a>
         </li>
       </ul>
@@ -122,6 +120,12 @@
         </li>
       </ul>
     </nav>
+    <section class="info__logo">
+      <a href="index.html">
+      <img src="img/logo.png" alt="логотип">
+      </a>
+      <button id="open-nav" class="nav-open nav-open--htx" type="button"><span>Меню</span></button>
+    </section>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->

@@ -10,7 +10,6 @@
 
 <body>
   <main class="page-main container">
-    <button id="open-nav" class="nav-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <section id="content" class="personal box">
       <form class="form" action="index.html" method="post">
         <div class="box__block">
@@ -22,7 +21,7 @@
           <input class="box__input" id="surname" type="text" placeholder="Шевцов">
           <label for="name3">Отчество</label>
           <input class="box__input" id="name3" type="text" placeholder="Владимирович">
-          <label for="">Дата рождения</label>
+          <label>Дата рождения</label>
           <div class="personal__data">
             <span>
               <select>
@@ -90,7 +89,7 @@
           <input class="box__input" id="map" type="text" placeholder="Санкт-Петербург">
           <div class="button__wrapper">
             <article class="button">
-              <input class="button__cancel" type="button" name="" value="Отменить">
+              <input class="button__cancel" type="button" value="Отменить">
               <input class="button__enter" type="submit" value="Сохранить">
               </article>
             </div>
@@ -98,15 +97,14 @@
       </form>
     </section>
     <nav id="nav" class="info nav-hide">
-      <button id="close-nav" class="nav-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       <ul class="info__lists">
         <li class="info__list into-tablet">
           <h2>Финансы</h2>
         </li>
-        <li class="info__list">
+        <li id="li-1" class="info__list">
           <a href="pay.html">Пополнить баланс</a>
         </li>
-        <li class="info__list">
+        <li id="li-2" class="info__list">
           <a href="review.html">История транзакций</a>
           <div class="review__toggle">
             <input class="review__radio" id="import" type="checkbox" name="radio2" checked="">
@@ -120,10 +118,10 @@
         <li class="info__list into-tablet">
           <h2>Профиль</h2>
         </li>
-        <li class="info__list info-active">
+        <li id="li-3" class="info__list info-active">
           <a href="index.html">Личная информация</a>
         </li>
-        <li class="info__list">
+        <li id="li-4" class="info__list">
           <a href="contacts.html">Контакты</a>
         </li>
       </ul>
@@ -131,10 +129,10 @@
         <li class="info__list into-tablet">
           <h2>Услуги</h2>
         </li>
-        <li class="info__list">
+        <li id="li-5" class="info__list">
           <a href="order.html">Заказать услугу</a>
         </li>
-        <li class="info__list">
+        <li id="li-6" class="info__list">
           <a href="service.html">Мои услуги</a>
         </li>
       </ul>
@@ -144,7 +142,12 @@
         </li>
       </ul>
     </nav>
-
+    <section class="info__logo">
+      <a href="index.html">
+      <img src="img/logo.png" alt="логотип">
+      </a>
+      <button id="open-nav" class="nav-open nav-open--htx" type="button"><span>Меню</span></button>
+    </section>
     <section style="display:none" class="modal">
       <form class="modal__form" action="index.html" method="post">
         <div class="modal__toggle-block">
@@ -162,11 +165,11 @@
             <label for="radio1">Запомнить меня</label>
           </div>
           <div class="button modal__button">
-            <input class="button__cancel" type="button" name="" value="Отменить">
+            <input class="button__cancel" type="button" value="Отменить">
             <input class="button__enter" type="submit" value="Войти">
           </div>
         </section>
-        <section id="registration" class="modal-registration">
+        <section class="modal-registration">
           <label class="modal__valid" for="name">ФИО</label>
           <input class="modal__input" id="name" type="text" value="Шевцов Дмитрий Владимирович">
           <div class="modal__number">
@@ -200,11 +203,11 @@
             <label for="radio">Запомнить меня</label>
             <input id="check" class="modal__check" type="checkbox" name="personal">
             <label for="check" class="modal__personal">
-              <p class="modal__remember-label">Я согласен на обработку <span>персональных данных</span></p>
+              <span class="modal__remember-label">Я согласен на обработку <span>персональных данных</span></span>
             </label>
           </div>
           <div class="button modal__button">
-            <input class="button__cancel" type="button" name="" value="Отменить">
+            <input class="button__cancel" type="button" value="Отменить">
             <input class="button__enter" type="submit" value="Подтвердить">
           </div>
         </section>

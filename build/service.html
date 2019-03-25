@@ -103,7 +103,6 @@
 </symbol></svg>
   </div>
   <main class="page-main container">
-    <button id="open-nav" class="nav-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <section id="content" class="service box">
         <div class="form">
           <h1 class="visually-hidden">Услуги</h1>
@@ -176,15 +175,14 @@
         </div>
       </section>
       <nav id="nav" class="info nav-hide">
-        <button id="close-nav" class="nav-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class="info__lists">
           <li class="info__list into-tablet">
             <h2>Финансы</h2>
           </li>
-          <li class="info__list">
+          <li id="li-2" class="info__list">
             <a href="pay.html">Пополнить баланс</a>
           </li>
-          <li class="info__list">
+          <li id="li-2" class="info__list">
             <a href="review.html">История транзакций</a>
             <div class="review__toggle">
               <input class="review__radio" id="import" type="checkbox" name="radio2" checked="">
@@ -198,10 +196,10 @@
           <li class="info__list into-tablet">
             <h2>Профиль</h2>
           </li>
-          <li class="info__list">
+          <li id="li-3" class="info__list">
             <a href="index.html">Личная информация</a>
           </li>
-          <li class="info__list">
+          <li id="li-4" class="info__list">
             <a href="contacts.html">Контакты</a>
           </li>
         </ul>
@@ -209,10 +207,10 @@
           <li class="info__list into-tablet">
             <h2>Услуги</h2>
           </li>
-          <li class="info__list">
+          <li id="li-5" class="info__list">
             <a href="order.html">Заказать услугу</a>
           </li>
-          <li class="info__list info-active">
+          <li id="li-6" class="info__list info-active">
             <a href="service.html">Мои услуги</a>
           </li>
         </ul>
@@ -222,6 +220,12 @@
           </li>
         </ul>
       </nav>
+      <section class="info__logo">
+        <a href="index.html">
+        <img src="img/logo.png" alt="логотип">
+        </a>
+        <button id="open-nav" class="nav-open nav-open--htx" type="button"><span>Меню</span></button>
+      </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->

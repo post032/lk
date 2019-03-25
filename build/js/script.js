@@ -48,14 +48,25 @@ $('.pay__lists li').click(function(){
   $('.pay__lists li').not(this).removeClass('pay__active');
 });
 
-$('#open-nav').click(function(){
-  $('#nav').addClass('nav-show');
-  $('#nav').removeClass('nav-hide');
-   $('#nav').removeAttr('style');
-});
+// $('#open-nav').click(function(){
+//   $('#nav').toggleClass('nav-hide');
+// });
+//
 
-$('#close-nav').click(function(){
-  $('#nav').addClass('nav-hide');
-  $('#nav').removeClass('nav-show');
-  $('#nav').removeAttr('style');
-});
+(function() {
+  "use strict";
+  var toggles = document.querySelectorAll('.nav-open');
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      $('#nav').toggleClass('nav-hide');
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
+  }
+
+})();
