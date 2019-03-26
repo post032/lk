@@ -13,7 +13,6 @@
     <section id="content" class="personal box">
       <form class="form" action="index.html" method="post">
         <div class="box__block">
-          <button class="box__button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
           <h1 class="visually-hidden">Личная информация</h1>
           <label for="name1">Имя</label>
           <input class="box__input" id="name1" type="text" placeholder="Дмитрий">
@@ -148,7 +147,7 @@
       </a>
       <button id="open-nav" class="nav-open nav-open--htx" type="button"><span>Меню</span></button>
     </section>
-    <section style="display:none" class="modal">
+    <section class="modal">
       <form class="modal__form" action="index.html" method="post">
         <div class="modal__toggle-block">
           <button id="enter" class="modal__toggle modal__toggle--enter modal__toggle--active" type="button" name="button"><span>Вход</span></button>
@@ -170,32 +169,32 @@
           </div>
         </section>
         <section class="modal-registration">
-          <label class="modal__valid" for="name">ФИО</label>
-          <input class="modal__input" id="name" type="text" value="Шевцов Дмитрий Владимирович">
+          <label id="name__label" class="modal__valid" for="name">ФИО</label>
+          <input class="modal__input" id="name" type="text" value="Шевцов Дмитрий Владимирович" required>
           <div class="modal__number">
             <div>
-              <label class="modal__valid" for="series">Серия</label>
-              <input id="series" type="text" value="12 34">
+              <label id="series__label" class="modal__valid" for="series">Серия</label>
+              <input id="series" type="text" value="12 34" required>
             </div>
             <div>
-              <label class="modal__valid" for="number">Номер</label>
-              <input id="number" type="text" value="567890">
+              <label id="number__label" class="modal__valid" for="number">Номер</label>
+              <input id="number" type="text" value="567890" required>
             </div>
           </div>
-          <label class="modal__valid" for="mail">E-mail</label>
-          <input class="modal__input" id="mail" type="text" value="shestpsov@gmail.com">
-          <label class="modal__valid" for="phone">Номер телефона</label>
-          <input class="modal__input" id="phone" type="text" value="89216210520">
-          <label for="r-login">Логин</label>
-          <input class="modal__input" id="r-login" type="text" placeholder="shestpsov001">
+          <label id="mail__label" class="modal__valid" for="mail">E-mail</label>
+          <input class="modal__input" id="mail" type="text" value="shestpsov@gmail.com" required>
+          <label id="phone__label" class="modal__valid" for="phone">Номер телефона</label>
+          <input class="modal__input" id="phone" type="text" value="89216210520" required>
+          <label id="r-login__label" for="r-login">Логин</label>
+          <input class="modal__input" id="r-login" type="text" placeholder="shestpsov001" required>
           <div class="modal__password">
             <div>
-              <label class="modal__valid" for="pass1">Пароль</label>
-              <input id="pass1" type="password" value="**********">
+              <label id="pass1__label" class="modal__valid" for="pass1">Пароль</label>
+              <input id="pass1" type="password" value="**********" required>
             </div>
             <div>
-              <label class="modal__valid" for="pass2">Пароль еще раз</label>
-              <input id="pass2" type="password" value="**********">
+              <label id="pass2__label" class="modal__valid" for="pass2">Пароль еще раз</label>
+              <input id="pass2" type="password" value="**********" required>
             </div>
           </div>
           <div class="modal__remember">
@@ -208,7 +207,7 @@
           </div>
           <div class="button modal__button">
             <input class="button__cancel" type="button" value="Отменить">
-            <input class="button__enter" type="submit" value="Подтвердить">
+            <input id="submit" class="button__enter" type="submit" value="Подтвердить">
           </div>
         </section>
       </form>
